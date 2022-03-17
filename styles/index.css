@@ -99,7 +99,7 @@ nav ul a:hover {
 }
 
 .my-description {
-  background: url(../description.png);
+  background: url(../assets/images/description.png);
   background-repeat: no-repeat;
   height: 68vh;
   display: flex;
