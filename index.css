@@ -1,0 +1,214 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  background-color: #161616;
+  height: 100%;
+}
+
+.position-nav {
+  position: sticky;
+  top: 0%;
+}
+nav {
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #161616;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  width: 250px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+}
+
+nav ul a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+@media (max-width: 1000px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #202020;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul a {
+    margin-left: 0px;
+  }
+}
+
+nav ul a.active,
+nav ul a:hover {
+  background: none;
+  color: #fc0e49;
+}
+
+.my-description {
+  background: url(../description.png);
+  background-repeat: no-repeat;
+  height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.description-text {
+  color: #fc0e49;
+}
+
+.name-size {
+  font-size: 80px;
+}
+
+@media (max-width: 780px) {
+  .description-text {
+    color: #fc0e49;
+  }
+
+  .name-size {
+    font-size: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .description-text {
+    color: #fc0e49;
+    font-size: 20px;
+  }
+
+  .name-size {
+    font-size: 45px;
+  }
+
+  nav .logo {
+    width: 190px;
+  }
+}
+@media (max-width: 320px) {
+  nav .logo {
+    display: none;
+  }
+
+  .description-text {
+    color: #fc0e49;
+    font-size: 16px;
+  }
+
+  .name-size {
+    font-size: 20px;
+  }
+
+  .work-text {
+    margin-bottom: 10px !important;
+  }
+}
+
+.my-learning {
+  background-color: #202020;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.my-work-text {
+  font-size: 50px;
+  color: #fc0e49;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .my-work-text {
+    font-size: 30px;
+    color: #fc0e49;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 400px) {
+  .my-work-text {
+    font-size: 20px;
+    color: #fc0e49;
+    white-space: nowrap;
+  }
+
+  .text-description-me {
+    font-size: 14px;
+  }
+}
+.download-cv {
+  transition: all 0.5s ease;
+  color: black;
+  border: 3px solid black;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  width: 200px;
+  border-radius: 4px;
+}
+.download-cv:hover {
+  background-color: #fc0e49;
+  border: 3px solid #fc0e49;
+  color: white;
+}
