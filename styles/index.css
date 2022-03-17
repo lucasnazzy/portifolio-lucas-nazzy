@@ -101,7 +101,7 @@ nav ul a:hover {
 .my-description {
   background: url(../assets/images/description.png);
   background-repeat: no-repeat;
-  height: 68vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
