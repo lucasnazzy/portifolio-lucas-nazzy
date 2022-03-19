@@ -5,13 +5,20 @@
 html,
 body {
   background-color: #161616;
+  margin: 0;
+  height: 100%;
+}
+
+.my-page {
   height: 100%;
 }
 
 .position-nav {
   position: sticky;
   top: 0%;
+  z-index: 1;
 }
+
 nav {
   display: flex;
   height: 80px;
@@ -70,7 +77,6 @@ input[type="checkbox"] {
     top: 80px;
     left: -100%;
     background: #202020;
-    height: 100vh;
     width: 100%;
     text-align: center;
     display: block;
@@ -101,14 +107,16 @@ nav ul a:hover {
 .my-description {
   background: url(../assets/images/description.png);
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  /* background-size: cover;
+  transform-origin: left;
+  transform: scaleX(1); */
 }
 
 .description-text {
@@ -163,9 +171,9 @@ nav ul a:hover {
 
 .my-learning {
   background-color: #202020;
-  height: 100vh;
   display: flex;
   justify-content: center;
+  height: 63%;
 }
 
 .my-work-text {
@@ -174,24 +182,6 @@ nav ul a:hover {
   white-space: nowrap;
 }
 
-@media (max-width: 900px) {
-  .my-work-text {
-    font-size: 30px;
-    color: #fc0e49;
-    white-space: nowrap;
-  }
-}
-@media (max-width: 400px) {
-  .my-work-text {
-    font-size: 20px;
-    color: #fc0e49;
-    white-space: nowrap;
-  }
-
-  .text-description-me {
-    font-size: 14px;
-  }
-}
 .download-cv {
   transition: all 0.5s ease;
   color: black;
@@ -204,11 +194,399 @@ nav ul a:hover {
   background-color: transparent;
   padding: 10px;
   outline: none;
-  width: 200px;
+  padding: 10px 40px;
+  text-decoration: none;
   border-radius: 4px;
 }
 .download-cv:hover {
   background-color: #fc0e49;
   border: 3px solid #fc0e49;
   color: white;
+}
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-skills {
+  background-color: #161616;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.my-trajectory {
+  background-color: #202020;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.reveal-skills {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal-skills.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.first-lineskills {
+  position: relative;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 2s ease;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.first-lineskills.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.second-lineskills {
+  position: relative;
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.second-lineskills.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.third-lineskills {
+  position: relative;
+  transform: translateX(-400px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.third-lineskills.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.img-container {
+  width: 60px;
+}
+
+.destaque {
+  background: #312e37;
+  border-radius: 10px;
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  display: flex;
+  padding: 15px;
+  color: #000;
+  transition: all ease-out 0.5s;
+  min-height: 150px;
+  max-height: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 45px;
+  margin-bottom: 45px;
+}
+
+.destaque:hover {
+  background: #201e24;
+  transform: scale(1.05);
+}
+
+.text-color {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media (max-width: 1350px) {
+  .destaque {
+    min-width: 180px;
+    max-width: 180px;
+    display: flex;
+    width: 180px;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    width: 50px;
+  }
+
+  .my-work-text {
+    font-size: 30px;
+  }
+  /* 
+  .my-skills {
+    height: 70%;
+  } */
+}
+
+@media (max-width: 1115px) {
+  .my-skills {
+    height: 80%;
+  }
+}
+@media (max-width: 955px) {
+  .my-skills {
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .my-work-text {
+    font-size: 30px;
+    color: #fc0e49;
+    white-space: nowrap;
+  }
+
+  .my-learning {
+    height: 80%;
+  }
+}
+
+@media (max-width: 860px) {
+  .destaque {
+    min-width: 110px;
+    max-width: 140px;
+    display: flex;
+    width: 140px;
+    height: 115px;
+    min-height: 115px;
+    max-height: 115px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    width: 40px;
+  }
+
+  .text-color {
+    font-size: 12px;
+  }
+
+  .my-work-text {
+    font-size: 18px;
+  }
+
+  .my-learning {
+    height: 75%;
+  }
+
+  .my-skills {
+    height: 90%;
+  }
+}
+@media (max-width: 765px) {
+  .my-learning {
+    height: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .destaque {
+    min-width: 110px;
+    max-width: 150px;
+    display: flex;
+    width: 90px;
+    height: 95px;
+    min-height: 95px;
+    max-height: 95px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    width: 20px;
+  }
+
+  .text-color {
+    font-size: 12px;
+  }
+
+  .my-work-text {
+    font-size: 15px;
+  }
+
+  .my-learning {
+    height: 80%;
+  }
+  .my-skills {
+    height: 80%;
+  }
+}
+
+@media (max-width: 720px) {
+  .my-work-text {
+    font-size: 30px;
+    color: #fc0e49;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 640px) {
+  .my-work-text {
+    font-size: 30px;
+    color: #fc0e49;
+    white-space: nowrap;
+  }
+
+  /* .my-learning {
+    height: 65%;
+  } */
+}
+
+@media (max-width: 570px) {
+  .my-learning {
+    height: 73%;
+  }
+
+  .my-work-text {
+    font-size: 20px;
+    color: #fc0e49;
+    white-space: nowrap;
+  }
+
+  .text-description-me {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 465px) {
+  .my-skills {
+    height: 70%;
+  }
+}
+@media (max-width: 495px) {
+  .my-learning {
+    height: 77%;
+  }
+}
+@media (max-width: 470px) {
+  .destaque {
+    min-width: 85px;
+    max-width: 85px;
+    display: flex;
+    width: 85px;
+    height: 85px;
+    min-height: 85px;
+    max-height: 85px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    margin-bottom: 5px !important;
+  }
+  .text-color {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 450px) {
+  .my-learning {
+    height: 67%;
+  }
+
+  .text-description-me {
+    font-size: 12px;
+  }
+}
+@media (max-width: 410px) {
+  .my-learning {
+    height: 75%;
+  }
+}
+@media (max-width: 380px) {
+  .destaque {
+    min-width: 85px;
+    max-width: 85px;
+    display: flex;
+    width: 85px;
+    height: 85px;
+    min-height: 85px;
+    max-height: 85px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    margin-bottom: 5px !important;
+  }
+  .text-color {
+    font-size: 9px;
+  }
+
+  .my-skills {
+    height: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .my-learning {
+    height: 85%;
+  }
+
+  .text-description-me {
+    font-size: 12px;
+  }
+
+  .destaque {
+    min-width: 85px;
+    max-width: 90px;
+    display: flex;
+    width: 85px;
+    height: 95px;
+    min-height: 95px;
+    max-height: 95px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    width: 20px;
+  }
+
+  .text-color {
+    font-size: 10px;
+  }
+
+  .my-work-text {
+    font-size: 15px;
+  }
 }

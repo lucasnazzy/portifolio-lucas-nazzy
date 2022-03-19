@@ -29,63 +29,220 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-fluid position-nav m-0 p-0">
-      <nav>
-        <img
-          class="logo"
-          src="../portifolio lucas/assets/images/logo.svg"
-          alt="Logo"
-        />
-        <input type="checkbox" id="click" />
-        <label for="click" class="menu-btn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul>
-          <a class="active" href="#anchor-home">Home</a>
-          <a href="#anchor-about"> Sobre </a>
-          <a href="#">Background</a>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="container-fluid p-0 m-0 my-description" id="anchor-home">
-      <div class="col-xl-13 col-lg-10 col-md-10 col-sm-10 col-10">
-        <h2 class="description-text mb-0">Olá, eu sou</h2>
-
-        <h1 class="text-uppercase text-white name-size mb-0">
-          Lucas
-          <span class="description-text name-size"> Nazzini</span>
-        </h1>
-        <h2 class="h4 text-white mb-5 work-text">Front End Developer</h2>
-
-        <p class="text-white">
-          Completamente apaixonado por tecnologia, possuo um ano de experiência
-          com desenvolvimento front-end onde realizei diversos desafios<br />
-          como programação de sites responsivos, sistemas e aplicações mobile.
-        </p>
+    <div class="my-page">
+      <div class="container-fluid position-nav m-0 p-0">
+        <nav>
+          <img class="logo" src="./assets/images/logo.svg" alt="Logo" />
+          <input type="checkbox" id="click" />
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <a class="active" href="#anchor-home">Home</a>
+            <a href="#anchor-about"> Sobre </a>
+            <a href="#">Background</a>
+          </ul>
+        </nav>
       </div>
-    </div>
-    <div class="container-fluid p-0 m-0 pt-5 my-learning" id="anchor-about">
-      <div class="col-xl-13 col-lg-10 col-md-10 col-sm-10 col-10">
-        <h2 class="text-uppercase my-work-text mb-4">
-          &lt;o desenvolvedor&gt;
-        </h2>
 
-        <p class="text-white text-description-me">
-          Desenvolvedor front-end fazendo graduação em análise e desenvolvimento
-          de sistemas na Centro Universitário Nossa Senhora do Patrocínio.
-          Constantemente antenado à novas tendências tecnológicas, realizei um
-          ano de curso técnico de informática pela FIEC, onde operei tecnologias
-          como Java, Python, HTML e CSS, também realizei cursos sobre
-          desenvolvimento e UI/UX Design em plataformas como Udemy, Origamid e
-          Alura. Em um atuando como programador front-end, trabalhei com
-          tecnologias como React, React Native e Angular conheci clientes,
-          desenvolvedores e designers super legais e competentes, atualmente
-          faço parte do time de Desenvolvimento da Doubleit.
-        </p>
+      <div class="container-fluid p-0 m-0 my-description" id="anchor-home">
+        <div class="col-xl-13 col-lg-10 col-md-10 col-sm-10 col-10">
+          <h2 class="description-text mb-0">Olá, eu sou</h2>
 
-        <button class="download-cv">Baixar CV</button>
+          <h1 class="text-uppercase text-white name-size mb-0">
+            Lucas
+            <span class="description-text name-size"> Nazzini</span>
+          </h1>
+          <h2 class="h4 text-white mb-5 work-text">Front End Developer</h2>
+
+          <p class="text-white">
+            Completamente apaixonado por tecnologia, possuo um ano de
+            experiência com desenvolvimento front-end onde realizei diversos
+            desafios<br />
+            como programação de sites responsivos, sistemas e aplicações mobile.
+          </p>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0 m-0 pt-5 my-learning" id="anchor-about">
+        <div class="col-xl-13 col-lg-10 col-md-10 col-sm-10 col-10">
+          <div class="reveal">
+            <h2 class="text-uppercase my-work-text mb-4">
+              &lt;o desenvolvedor&gt;
+            </h2>
+
+            <p class="text-white text-description-me mb-5">
+              Desenvolvedor front-end fazendo graduação em análise e
+              desenvolvimento de sistemas na Centro Universitário Nossa Senhora
+              do Patrocínio. Constantemente antenado à novas tendências
+              tecnológicas, realizei um ano de curso técnico de informática pela
+              FIEC, onde operei tecnologias como Java, Python, HTML e CSS,
+              também realizei cursos sobre desenvolvimento e UI/UX Design em
+              plataformas como Udemy, Origamid e Alura. Em um atuando como
+              programador front-end, trabalhei com tecnologias como React, React
+              Native e Angular conheci clientes, desenvolvedores e designers
+              super legais e competentes, atualmente faço parte do time de
+              Desenvolvimento da Doubleit.
+            </p>
+
+            <a class="download-cv" href="assets/images/cvlucas.pdf" download>
+              Baixar CV
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid p-0 m-0 pt-5 mb-5 my-skills"
+        id="anchor-about"
+      >
+        <div class="col-xl-13 col-lg-10 col-md-10 col-sm-10 col-10">
+          <div class="reveal-skills">
+            <h2 class="text-uppercase my-work-text mb-4">
+              &lt;Minhas habilidades&gt;
+            </h2>
+          </div>
+
+          <div class="d-flex first-lineskills flex-wrap">
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/html5.svg"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">HTML</h5>
+            </div>
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/css3.svg"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">CSS</h5>
+            </div>
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/javascript.svg"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Javascript</h5>
+            </div>
+
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/sass.png"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">SASS</h5>
+            </div>
+
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/typescript.svg"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Typescript</h5>
+            </div>
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/react.svg"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">React JS / react-navite</h5>
+            </div>
+
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/angular.svg"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Angular</h5>
+            </div>
+
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/bootstrap.png"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">bootstrap</h5>
+            </div>
+
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/git.png"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Git</h5>
+            </div>
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/azure.png"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Azure Devoops</h5>
+            </div>
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/scrum.png"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Scrum</h5>
+            </div>
+            <div class="destaque">
+              <div class="img-container mb-3">
+                <img
+                  width="100px"
+                  src="assets/images/kanban.png"
+                  class="img-fluid"
+                />
+              </div>
+              <h5 class="text-uppercase text-color">Kanban</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0 m-0 pt-5 my-trajectory" id="anchor-about">
+        <div class="col-xl-13 col-lg-10 col-md-10 col-sm-10 col-10">
+          <div class="reveal">
+            <h2 class="text-uppercase my-work-text mb-4">
+              &lt;Minha trajetória&gt;
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="scripts/index.js"></script>
 </html>
