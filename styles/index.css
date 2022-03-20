@@ -114,9 +114,6 @@ nav ul a:hover {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  /* background-size: cover;
-  transform-origin: left;
-  transform: scaleX(1); */
 }
 
 .description-text {
@@ -173,7 +170,7 @@ nav ul a:hover {
   background-color: #202020;
   display: flex;
   justify-content: center;
-  height: 63%;
+  height: auto;
 }
 
 .my-work-text {
@@ -212,7 +209,7 @@ section {
 
 .my-skills {
   background-color: #161616;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -258,31 +255,14 @@ section {
   transform: translateX(0px);
   opacity: 1;
 }
-.second-lineskills {
-  position: relative;
-  transform: translateX(-300px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.second-lineskills.active {
-  transform: translateX(0px);
-  opacity: 1;
-}
-.third-lineskills {
-  position: relative;
-  transform: translateX(-400px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.third-lineskills.active {
-  transform: translateX(0px);
-  opacity: 1;
-}
 
 .img-container {
   width: 60px;
+  margin-bottom: 1rem;
+}
+
+.text-description-me {
+  margin-bottom: 3rem;
 }
 
 .destaque {
@@ -314,72 +294,132 @@ section {
   font-size: 16px;
 }
 
-@media (max-width: 1350px) {
+@media (min-width: 300px) and (max-width: 400px) {
+  .text-description-me {
+    margin-bottom: 10px !important;
+    font-size: 10px;
+
+    margin-bottom: 15px !important;
+  }
+
+  .download-cv {
+    transition: all 0.5s ease;
+    color: black;
+    border: 2px solid black;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 10px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .my-work-text {
+    font-size: 14px;
+  }
+
   .destaque {
-    min-width: 180px;
-    max-width: 180px;
-    display: flex;
-    width: 180px;
-    height: 130px;
-    min-height: 130px;
-    max-height: 130px;
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 80px;
+    max-height: 80px;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 10px;
   }
 
   .img-container {
-    width: 50px;
+    width: 25px;
+    margin-bottom: 5px;
+  }
+
+  .text-color {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .text-description-me {
+    margin-bottom: 10px !important;
+    font-size: 10px;
+
+    margin-bottom: 15px !important;
+  }
+
+  .download-cv {
+    transition: all 0.5s ease;
+    color: black;
+    border: 2px solid black;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 10px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
   }
 
   .my-work-text {
-    font-size: 30px;
-  }
-  /* 
-  .my-skills {
-    height: 70%;
-  } */
-}
-
-@media (max-width: 1115px) {
-  .my-skills {
-    height: 80%;
-  }
-}
-@media (max-width: 955px) {
-  .my-skills {
-    height: 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .my-work-text {
-    font-size: 30px;
-    color: #fc0e49;
-    white-space: nowrap;
+    font-size: 14px;
   }
 
-  .my-learning {
-    height: 80%;
+  .img-container {
+    width: 25px;
+    margin-bottom: 5px !important;
   }
-}
 
-@media (max-width: 860px) {
+  .text-color {
+    font-size: 12px;
+  }
+
   .destaque {
-    min-width: 110px;
-    max-width: 140px;
-    display: flex;
-    width: 140px;
-    height: 115px;
-    min-height: 115px;
-    max-height: 115px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    min-width: 90px;
+    max-width: 89px;
+
+    min-height: 90px;
+    max-height: 90px;
+
     margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .text-description-me {
+    margin-bottom: 10px !important;
+    font-size: 12px;
+
+    margin-bottom: 15px !important;
+  }
+
+  .download-cv {
+    transition: all 0.5s ease;
+    color: black;
+    border: 2px solid black;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 10px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .my-work-text {
+    font-size: 19px;
   }
 
   .img-container {
@@ -387,206 +427,64 @@ section {
   }
 
   .text-color {
-    font-size: 12px;
-  }
-
-  .my-work-text {
-    font-size: 18px;
-  }
-
-  .my-learning {
-    height: 75%;
-  }
-
-  .my-skills {
-    height: 90%;
-  }
-}
-@media (max-width: 765px) {
-  .my-learning {
-    height: 90%;
-  }
-}
-
-@media (max-width: 650px) {
-  .destaque {
-    min-width: 110px;
-    max-width: 150px;
-    display: flex;
-    width: 90px;
-    height: 95px;
-    min-height: 95px;
-    max-height: 95px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 15px;
-    margin-bottom: 10px;
-  }
-
-  .img-container {
-    width: 20px;
-  }
-
-  .text-color {
-    font-size: 12px;
-  }
-
-  .my-work-text {
-    font-size: 15px;
-  }
-
-  .my-learning {
-    height: 80%;
-  }
-  .my-skills {
-    height: 80%;
-  }
-}
-
-@media (max-width: 720px) {
-  .my-work-text {
-    font-size: 30px;
-    color: #fc0e49;
-    white-space: nowrap;
-  }
-}
-@media (max-width: 640px) {
-  .my-work-text {
-    font-size: 30px;
-    color: #fc0e49;
-    white-space: nowrap;
-  }
-
-  /* .my-learning {
-    height: 65%;
-  } */
-}
-
-@media (max-width: 570px) {
-  .my-learning {
-    height: 73%;
-  }
-
-  .my-work-text {
-    font-size: 20px;
-    color: #fc0e49;
-    white-space: nowrap;
-  }
-
-  .text-description-me {
     font-size: 14px;
   }
-}
 
-@media (max-width: 465px) {
-  .my-skills {
-    height: 70%;
-  }
-}
-@media (max-width: 495px) {
-  .my-learning {
-    height: 77%;
-  }
-}
-@media (max-width: 470px) {
   .destaque {
-    min-width: 85px;
-    max-width: 85px;
-    display: flex;
-    width: 85px;
-    height: 85px;
-    min-height: 85px;
-    max-height: 85px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 15px;
-    margin-bottom: 10px;
-  }
+    min-width: 135px;
+    max-width: 135px;
 
-  .img-container {
-    margin-bottom: 5px !important;
-  }
-  .text-color {
-    font-size: 9px;
+    min-height: 120px;
+    max-height: 120px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
-
-@media (max-width: 450px) {
-  .my-learning {
-    height: 67%;
-  }
-
+@media (min-width: 800px) and (max-width: 1100px) {
   .text-description-me {
-    font-size: 12px;
-  }
-}
-@media (max-width: 410px) {
-  .my-learning {
-    height: 75%;
-  }
-}
-@media (max-width: 380px) {
-  .destaque {
-    min-width: 85px;
-    max-width: 85px;
-    display: flex;
-    width: 85px;
-    height: 85px;
-    min-height: 85px;
-    max-height: 85px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
+    font-size: 16px;
+
+    margin-bottom: 15px !important;
   }
 
-  .img-container {
-    margin-bottom: 5px !important;
-  }
-  .text-color {
-    font-size: 9px;
-  }
-
-  .my-skills {
-    height: 100%;
-  }
-}
-@media (max-width: 350px) {
-  .my-learning {
-    height: 85%;
-  }
-
-  .text-description-me {
-    font-size: 12px;
-  }
-
-  .destaque {
-    min-width: 85px;
-    max-width: 90px;
-    display: flex;
-    width: 85px;
-    height: 95px;
-    min-height: 95px;
-    max-height: 95px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 15px;
-    margin-bottom: 10px;
-  }
-
-  .img-container {
-    width: 20px;
-  }
-
-  .text-color {
-    font-size: 10px;
+  .download-cv {
+    transition: all 0.5s ease;
+    color: black;
+    border: 2px solid black;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 4px;
   }
 
   .my-work-text {
-    font-size: 15px;
+    font-size: 24px;
+  }
+
+  .img-container {
+    width: 45px;
+  }
+  .text-color {
+    font-size: 14px;
+  }
+
+  .destaque {
+    min-width: 135px;
+    max-width: 135px;
+
+    min-height: 120px;
+    max-height: 120px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 }
