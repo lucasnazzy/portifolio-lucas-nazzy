@@ -578,6 +578,10 @@ section {
 }
 
 @media (max-width: 800px) {
+  .image-icon {
+    display: none;
+  }
+
   .infos-trajectory {
     display: block;
   }
@@ -638,4 +642,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+.box-user {
+  margin-right: auto;
 }
